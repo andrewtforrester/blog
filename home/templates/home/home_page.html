@@ -12,13 +12,13 @@
         {% for post in children %}
         <div class="mb-20">
             <div class="flex justify-between text-xl">
-                <h2 class="font-bold italic font-serif w-2/3"><a href="{% pageurl post %}">{{ post.title }}</a></h2>
+                <h2 class="font-bold italic font-serif w-2/3"><a class="text-[#003567] underline" href="{% pageurl post %}">{{ post.title }}</a></h2>
                 <h2 class="italic font-serif">{{ post.date.month }}/{{ post.date.day }}/{{ post.date.year }}</h2>
             </div>
         </div>
         {% endfor %}
 
-        <hr class="border-[.08rem] border-[#003567]">
+        <hr class="border-[.08rem] border-black">
 
         <div class="py-20">
             <h2 class="text-lg italic font-serif">This blog is run by <a class="text-[#003567] underline" href="https://github.com/andrewtforrester">Andrew Forrester</a>. You can contact me at gnothi.mathon@gmail.com.</h2>
