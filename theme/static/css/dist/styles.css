@@ -962,6 +962,27 @@ select {
   border-width: 1px;
 }
 
+.border-2 {
+  border-width: 2px;
+}
+
+.border-\[\.3rem\] {
+  border-width: .3rem;
+}
+
+.border-\[\.1rem\] {
+  border-width: .1rem;
+}
+
+.border-\[\.08rem\] {
+  border-width: .08rem;
+}
+
+.border-\[\#003567\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 53 103 / var(--tw-border-opacity));
+}
+
 .bg-gray-50 {
   --tw-bg-opacity: 1;
   background-color: rgb(249 250 251 / var(--tw-bg-opacity));
@@ -984,6 +1005,16 @@ select {
 
 .p-6 {
   padding: 1.5rem;
+}
+
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .pb-16 {
@@ -1086,6 +1117,15 @@ select {
 .text-\[\#fffcef\] {
   --tw-text-opacity: 1;
   color: rgb(255 252 239 / var(--tw-text-opacity));
+}
+
+.text-\[\#003567\] {
+  --tw-text-opacity: 1;
+  color: rgb(0 53 103 / var(--tw-text-opacity));
+}
+
+.underline {
+  text-decoration-line: underline;
 }
 
 .filter {
