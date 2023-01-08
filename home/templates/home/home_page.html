@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+
+
+{% load wagtailcore_tags %}
+{% include_block page.body %}
+
+{% block body_class %}template-homepage{% endblock %}
+
+{% block content %}
+    <div class="max-w-screen-sm mx-auto pt-40">
+        {% for post in children %}
+        <div class="mb-20">
+            <div class="flex justify-between text-xl">
+                <h2 class="font-bold italic font-serif w-2/3"><a href="{% pageurl post %}">{{ post.title }}</a></h2>
+                <h2 class="italic font-serif">{{ post.date.month }}/{{ post.date.day }}/{{ post.date.year }}</h2>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+{% endblock %}

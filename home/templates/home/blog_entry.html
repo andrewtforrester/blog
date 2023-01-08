@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% load wagtailimages_tags %}
+
+
+
+
+{% load wagtailcore_tags %}
+{% include_block page.body %}
+
+{% block body_class %}template-homepage{% endblock %}
+
+{% block content %}
+    <div class="max-w-screen-sm mx-auto mt-52">
+        <div class="text-3xl font-bold font-serif italic pb-16">
+            {{page.title}}
+        </div>    
+    </div>
+    {% for block in page.body %}
+        {% if block.block_type == 'heading' %}
+            <div class="max-w-screen-sm mx-auto">
+                <div class="pb-6 pt-6">
+                    <div class="text-2xl font-bold font-serif italic">{{ block.value }}</div>
+                </div>
+            </div>
+        {% elif block.block_type == 'paragraph' %}
+            <div class="max-w-screen-sm mx-auto">
+                <div class="mb-6">
+                    <div class="text-lg">{{ block.value }}</div>
+                </div>
+            </div>
+        {% elif block.block_type == 'image' %}
+            <div class="max-w-[55rem] mx-auto">
+                <div class="w-full pb-14 pt-8">
+                    {% image block.value width-2000 %}
+                </div>
+            </div>
+        {% endif %}
+    {% endfor %}
+{% endblock %}
