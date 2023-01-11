@@ -28,6 +28,12 @@
                     <div class="text-lg">{{ block.value }}</div>
                 </div>
             </div>
+        {% elif block.block_type == 'indented_paragraph' %}
+            <div class="max-w-screen-sm mx-auto pl-[2rem] sm:pl-[3rem]">
+                <div class="mb-6">
+                    <div class="text-lg">{{ block.value }}</div>
+                </div>
+            </div>
         {% elif block.block_type == 'image' %}
             <div class="max-w-[55rem] mx-auto">
                 <div class="w-full pb-14 pt-8">
