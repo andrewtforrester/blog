@@ -769,6 +769,14 @@ select {
   z-index: 20;
 }
 
+.z-\[-20\] {
+  z-index: -20;
+}
+
+.m-6 {
+  margin: 1.5rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -811,6 +819,30 @@ select {
   margin-bottom: 8rem;
 }
 
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
+.mb-12 {
+  margin-bottom: 3rem;
+}
+
+.mt-\[-8rem\] {
+  margin-top: -8rem;
+}
+
+.mt-\[-7\.5rem\] {
+  margin-top: -7.5rem;
+}
+
+.mt-\[-8\.5rem\] {
+  margin-top: -8.5rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
 .block {
   display: block;
 }
@@ -847,6 +879,14 @@ select {
   height: 100vh;
 }
 
+.h-\[10rem\] {
+  height: 10rem;
+}
+
+.h-\[20rem\] {
+  height: 20rem;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
@@ -865,6 +905,11 @@ select {
 
 .border-collapse {
   border-collapse: collapse;
+}
+
+.translate-y-\[-15rem\] {
+  --tw-translate-y: -15rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .transform {
@@ -921,6 +966,11 @@ select {
   padding: 1.5rem;
 }
 
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
 .pb-10 {
   padding-bottom: 2.5rem;
 }
@@ -953,6 +1003,10 @@ select {
   padding-left: 2rem;
 }
 
+.pt-\[10rem\] {
+  padding-top: 10rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -981,8 +1035,17 @@ select {
   line-height: 1.75rem;
 }
 
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
 .font-bold {
   font-weight: 700;
+}
+
+.font-semibold {
+  font-weight: 600;
 }
 
 .italic {
@@ -1007,6 +1070,11 @@ select {
   color: rgb(255 252 239 / var(--tw-text-opacity));
 }
 
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
 .underline {
   text-decoration-line: underline;
 }
@@ -1028,12 +1096,20 @@ select {
 }
 
 @media (min-width: 640px) {
+  .sm\:m-10 {
+    margin: 2.5rem;
+  }
+
   .sm\:mt-40 {
     margin-top: 10rem;
   }
 
   .sm\:mb-0 {
     margin-bottom: 0px;
+  }
+
+  .sm\:mt-\[-7\.5rem\] {
+    margin-top: -7.5rem;
   }
 
   .sm\:flex {
@@ -1048,6 +1124,11 @@ select {
     padding: 2.5rem;
   }
 
+  .sm\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
   .sm\:pt-40 {
     padding-top: 10rem;
   }
@@ -1058,6 +1139,10 @@ select {
 
   .sm\:pl-\[3rem\] {
     padding-left: 3rem;
+  }
+
+  .sm\:pb-10 {
+    padding-bottom: 2.5rem;
   }
 
   .sm\:text-3xl {
