@@ -47,6 +47,11 @@ module.exports = {
         fontFamily: {
             'sans': ['Tahoma', 'system-ui'],
             'serif': ['Georgia'],
+        },
+        extend: {
+            color: {
+                white: '#faf8f4'
+            }
         }
     },
     plugins: [
