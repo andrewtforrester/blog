@@ -46,4 +46,5 @@ class BlogEntry(Page):
     ]
 
     subpage_types = [
+        
     ]
