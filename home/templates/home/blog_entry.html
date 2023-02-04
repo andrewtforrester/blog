@@ -1,9 +1,5 @@
 {% extends "base.html" %}
 {% load wagtailimages_tags %}
-
-
-
-
 {% load wagtailcore_tags %}
 {% include_block page.body %}
 
@@ -38,6 +34,19 @@
             <div class="max-w-screen-sm mx-auto pl-[2rem] sm:pl-[3rem]">
                 <div class="mb-6">
                     <div class="text-lg">{{ block.value }}</div>
+                </div>
+            </div>
+        {% elif block.block_type == 'commentary_block' %}
+            <div class="sm:flex items-start justify-center">
+                <div class="max-w-lg pl-[2rem] sm:pl-0 sm:pr-4">
+                    <div class="mb-6">
+                        <div class="text-lg italic sm:not-italic">{{ block.value.column_1 }}</div>
+                    </div>
+                </div>
+                <div class="max-w-lg sm:pl-4">
+                    <div class="mb-6">
+                        <div class="text-lg">{{ block.value.column_2 }}</div>
+                    </div>
                 </div>
             </div>
         {% elif block.block_type == 'image' %}

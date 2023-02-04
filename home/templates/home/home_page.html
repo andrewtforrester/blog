@@ -1,7 +1,5 @@
 {% extends "base.html" %}
-
-
-
+{% load wagtailimages_tags %}
 {% load wagtailcore_tags %}
 {% include_block page.body %}
 
@@ -10,18 +8,22 @@
 {% block content %}
     <div class="max-w-screen-sm mx-auto pt-32 sm:pt-40">
         {% for post in children %}
-        <div class="mb-20">
-            <div class="sm:flex justify-between text-lg sm:text-xl">
-                <h2 class="font-bold italic font-serif sm:w-2/3 mb-2 sm:mb-0"><a class="text-[#003567] underline" href="{% pageurl post %}">{{ post.title }}</a></h2>
-                <h2 class="italic font-serif">{{ post.date.month }}/{{ post.date.day }}/{{ post.date.year }}</h2>
+            <div class="">
+                <div class="sm:flex justify-between text-lg sm:text-xl mb-10">
+                    <h2 class="font-bold italic font-serif sm:w-2/3 mb-2 sm:mb-0"><a class="text-navy underline" href="{% pageurl post %}">{{ post.title }}</a></h2>
+                    <h2 class="italic font-serif">{{ post.date.month }}/{{ post.date.day }}/{{ post.date.year }}</h2>
+                </div>
+                <div>
+                    <div>
+                        <div class="max-w-screen-sm mx-auto">
+                            <div class="mb-6">
+                                <div class="text-lg">{{ post.preview|richtext }}</div> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr class="my-10 border-purple border-[.1rem]">
             </div>
-        </div>
         {% endfor %}
-
-        <hr class="border-[.08rem] border-black">
-
-        <div class="mt-6">
-            <h2 class="text-md sm:text-lg italic font-serif">This blog is run by <a class="text-[#003567] underline" href="https://github.com/andrewtforrester">Andrew Forrester</a>. You can contact me at gnothi.mathon@gmail.com.</h2>
-        </div>
     </div>
 {% endblock %}

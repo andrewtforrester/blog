@@ -30,17 +30,18 @@
         {% endblock %}
     </head>
 
-    <body class="bg-[#faf8f4] relative">
+    <body class="bg-white relative">
+        
         {% include 'home/_partials/header.html' %}
 
-        <div class="p-6 sm:p-10 bg-[#faf8f4] min-h-screen">
+        <div class="p-6 sm:p-10 bg-white min-h-screen">
             
-            
-                {% block content %}
-                {% endblock %}
+            {% block content %}
+            {% endblock %}
             
             
         </div>
+
         {% include 'home/_partials/footer.html' %}
         
 

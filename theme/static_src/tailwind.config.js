@@ -49,8 +49,9 @@ module.exports = {
             'serif': ['Georgia'],
         },
         extend: {
-            color: {
-                white: '#faf8f4'
+            colors: {
+                navy: '#003567',
+                purple: '#301934',
             }
         }
     },
