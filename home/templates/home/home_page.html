@@ -25,7 +25,9 @@
                 {% if post.preview|length %}
                     <h2 class="font-bold italic font-serif sm:w-2/3 mb-2 sm:mb-0"><a class="text-navy underline" href="{% pageurl post %}">Read more →</a></h2>
                 {% endif %}
-                <hr class="my-10 border-purple border-[.1rem]">
+                {% if not forloop.last %}
+                    <hr class="my-10 border-purple border-[.1rem]">
+                {% endif %}
             </div>
         {% endfor %}
     </div>
